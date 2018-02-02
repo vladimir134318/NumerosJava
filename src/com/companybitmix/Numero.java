@@ -8,14 +8,21 @@ public class Numero {
     public boolean esPar(){
         return num%2 == 0;
     }
-    public boolean primo(int a){
-        num = a;
+    public boolean primo(){
+
         int cont = 0;
-        for(int i = 1 ; i<=a; i++){
-            if (a%i==0){
+        for(int i = 1 ; i<=num; i++){
+            if (num%i==0){
                 cont = cont+1;
             }
         }
         return cont == 2 ;
+    }
+    public int factorial (){
+        int result = 1;
+        for (int i = 1; i<=num ; i ++){
+            result = result * i ;
+        }
+        return result ;
     }
 }
